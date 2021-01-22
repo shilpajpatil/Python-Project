@@ -16,8 +16,8 @@ def main():
         comp_choice=computer_choice()                                                              #function call with no parameters
         print("------------")
   
-         if user_choice == "r":                                                                   
-            if comp_choice =="r":
+         if user_choice == "r":                                                                    #chose_option return choice
+            if comp_choice =="r":                                                                  #computer_choice return choice                                  
                 print("you choose rock. computer chose rock.   you Tied.")
             elif comp_choice == "p":
                 print("you choose rock.  computer chose paper.  you lose.")
@@ -61,9 +61,9 @@ def main():
 
 
 
-def chose_option():
+def chose_option():                                                                                   #chose_option function definition                                                                       
     user_choice=input("select rock,paper,scissor");
-    if user_choice in ["rock","Rock","R","r"]:
+    if user_choice in ["rock","Rock","R","r"]:                                                        
         user_choice="r"
     elif user_choice in ["paper","Paper","P","p"]:
         user_choice="p"
@@ -75,8 +75,8 @@ def chose_option():
     return user_choice;
 
 
-def computer_choice():
-    comp_choice=random.randint(1,3)
+def computer_choice():                                                                             #computer choice definition
+    comp_choice=random.randint(1,3)                                                                #random is a package which randomly select a value from your given range
     if comp_choice==1:
         comp_choice="r"
     elif comp_choice==2:
@@ -87,4 +87,4 @@ def computer_choice():
 
 
 #if __name__ =="__main__":
-main()
+main()                                                                                            #main  function call
