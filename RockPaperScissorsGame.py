@@ -1,6 +1,10 @@
 #-------------------rock paper scissors game--------------------------------------
+"""
+project name:RockPaperScissorsGame.py
+purpose: Creating a  game to play with computer
+Author: Shilpajpatil
 
-
+"""
 import random
 #----------------------main fun---------------
 def main():
@@ -8,11 +12,11 @@ def main():
     player_win = 0
     while True:
         print("---------")
-        user_choice=chose_option()
-        comp_choice=computer_choice()
+        user_choice=chose_option()                                                                 #function call with no parameters
+        comp_choice=computer_choice()                                                              #function call with no parameters
         print("------------")
-
-        if user_choice == "r":
+  
+         if user_choice == "r":                                                                   
             if comp_choice =="r":
                 print("you choose rock. computer chose rock.   you Tied.")
             elif comp_choice == "p":
@@ -43,10 +47,10 @@ def main():
 
 
         print("-----------------------------")
-        print("player wins:" + str(player_win))
-        print("computer wins:" + str(comp_wins))
+        print("player wins:",player_win)
+        print("computer wins:",comp_wins)
 
-        user_choice=input("Do ou want to play again?(y/n)")
+        user_choice=input("Do ou want to play again?(y/n)")                                                             
         if user_choice in ["Y","y","yes","Yes"]:
             pass
         elif user_choice in ["N","n","no","No"]:
