@@ -2,7 +2,7 @@
 """
 project name:RockPaperScissorsGame.py
 purpose: Creating a  game to play with computer
-Author: Shilpajpatil
+BY: Shilpa Jayant patil
 
 """
 import random
