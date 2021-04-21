@@ -1,5 +1,11 @@
-#converting  roman to decimal
+"""
 
+Project Name:converting  roman to decimal
+Purpose: converting roman number into decimal
+By: Shilpa Jayant Patil
+Input: 'IX'
+Output: 9
+"""
 indentation ={
         'I': 1,
         'V':5,
